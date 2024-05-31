@@ -43,6 +43,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
         scaffoldBackgroundColor: const Color.fromRGBO(255, 254, 229, 1), 
+        cardColor: tema.scaffoldBackgroundColor,
+        drawerTheme: DrawerThemeData(backgroundColor: tema.scaffoldBackgroundColor),
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.pink,
           titleTextStyle: TextStyle(
