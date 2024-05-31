@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
           titleLarge: const TextStyle(
             fontFamily: 'RobotoCondensed',
             fontSize: 20,
+            color: Colors.black,
           ),
           titleSmall: const TextStyle(
             fontFamily: 'OpenSans',
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
             fontFamily: 'OpenSans',
             fontSize: 12,
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
         scaffoldBackgroundColor: const Color.fromRGBO(255, 254, 229, 1), 
@@ -68,7 +69,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.HOME: (ctx) => const CategoriesScreen(),
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
-        AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
+        AppRoutes.MEAL_DETAIL: (ctx) => const MealDetailScreen(),
       },
     );
   }
