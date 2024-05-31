@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/categories_screen.dart';
+import 'screens/tabs_screen.dart';
 import 'screens/categories_meals_screen.dart';
 import 'screens/meal_detail_screen.dart';
 import 'utils/app_routes.dart';
@@ -21,12 +21,14 @@ class MyApp extends StatelessWidget {
         colorScheme: tema.colorScheme.copyWith(
           primary: Colors.pink,
           secondary: Colors.amber,
-          background: Colors.black,
+          tertiary: Colors.white,
+          background: Colors.grey,
         ),
         textTheme: tema.textTheme.copyWith(
           titleMedium: const TextStyle(
             fontFamily: 'Raleway',
             fontSize: 18,
+            color: Colors.black,
           ),
           titleLarge: const TextStyle(
             fontFamily: 'RobotoCondensed',
@@ -67,7 +69,7 @@ class MyApp extends StatelessWidget {
         //TextButton é o botão sem formatação
       ),
       routes: {
-        AppRoutes.HOME: (ctx) => const CategoriesScreen(),
+        AppRoutes.HOME: (ctx) => const TabsScreen(),
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
         AppRoutes.MEAL_DETAIL: (ctx) => const MealDetailScreen(),
       },
